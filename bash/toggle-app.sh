@@ -15,4 +15,4 @@ SEARCH_TERM="[${APP:0:1}]${APP:1:${#APP}}"
 if ps aux | grep "$SEARCH_TERM" | grep -v toggle
   then xdotool windowactivate $WINDOW_TO_TOGGLE
   else $APP&
-fi   
+fi
